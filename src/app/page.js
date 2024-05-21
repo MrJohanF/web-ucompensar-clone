@@ -94,13 +94,13 @@ export default function Home() {
             </form>
           </div>
           {/* Parte derecha: Imagen */}
-          <div className="flex-1 bg-slate-500">
+          <div className="flex-1 bg-[#617989]">
             <img
               src="/images/img-software.jpg"
               alt="Descripción de la imagen"
               style={{ width: "100%", height: "auto" }}
             />
-            <div className="flex flex-col text-left mt-4 pl-8 ">
+            <div className="flex flex-col text-left mt-4 pl-8 space-y-2 pb-3">
               <p>SNIES: 109130</p>
               <p>Resolución: 9058 del 28 de agosto de 2019</p>
               <p>Duración del programa: 10 semestres</p>
