@@ -1,113 +1,279 @@
 import Image from "next/image";
+import React from "react";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
+    <section className="">
+      <div className="container mx-auto px-4">
+        <div className="flex justify-center items-start space-x-20 max-w-7xl mx-auto">
+          <div className="py-8 flex-1">
+            <div className="relative text-center">
+              <div className="absolute inset-0 flex items-center">
+                <div className="w-full border-t border-orange-600"></div>
+              </div>
+              <div className="relative bg-white px-4 inline-block border rounded-2xl border-orange-600">
+                <span className="text-sm font-semibold text-orange-500 bg-white px-2">
+                  Presencial
+                </span>
+              </div>
+            </div>
+
+            <div className="my-8">
+              <h1 className="text-gray-900 text-5xl font-bold pb-4">
+                Ingeniería de Software – Bogotá
+              </h1>
+              <p className="text-gray-900">
+                Desarrolla soluciones de software y conviértete en un líder
+                digital de uno de los sectores con mayor crecimiento del
+                mercado. Obtén tres titulaciones a lo largo de tu formación
+              </p>
+              <button
+                type="submit"
+                className=" bg-white border hover:bg-orange-600 text-gray-800 px-16 py-4 rounded-3xl border-orange-600 my-5"
+              >
+                Inscríbete Aqui
+              </button>
+            </div>
+
+            {/* Formulario de grid 3x3 */}
+            <form className="mb-4">
+              <div className="grid grid-cols-3 gap-4">
+                <input
+                  type="text"
+                  placeholder="Estudiante"
+                  className="border p-2 max-h-11"
+                />
+                <input
+                  type="text"
+                  placeholder="Nombre"
+                  className="border p-2 max-h-11"
+                />
+                <input
+                  type="text"
+                  placeholder="Apellido"
+                  className="border p-2 max-h-11"
+                />
+                <input
+                  type="text"
+                  placeholder="Email"
+                  className="border p-2 max-h-11"
+                />
+                <input
+                  type="text"
+                  placeholder="Numero de contact"
+                  className="border p-2 max-h-11"
+                />
+                <input
+                  type="text"
+                  placeholder="Numero de documento"
+                  className="border p-2 max-h-11"
+                />
+                <input
+                  type="text"
+                  placeholder="Canal preferido"
+                  className="border p-2 max-h-11"
+                />
+                <input
+                  type="text"
+                  placeholder="Como se entero"
+                  className="border p-2 max-h-11"
+                />
+                <div className="flex items-center border-2 p-2">
+                  <input type="checkbox" id="checkbox" className="mr-2" />
+                  <label className="text-gray-700 text-xs" htmlFor="checkbox">
+                    Acepto la Política de Protección de Datos Personales
+                  </label>
+                </div>
+              </div>
+              <button
+                type="submit"
+                className="mt-4 bg-orange-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              >
+                Enviar
+              </button>
+            </form>
+          </div>
+          {/* Parte derecha: Imagen */}
+          <div className="flex-1 bg-slate-500">
+            <img
+              src="/images/img-software.jpg"
+              alt="Descripción de la imagen"
+              style={{ width: "100%", height: "auto" }}
             />
-          </a>
+            <div className="flex flex-col text-left mt-4 pl-8 ">
+              <p>SNIES: 109130</p>
+              <p>Resolución: 9058 del 28 de agosto de 2019</p>
+              <p>Duración del programa: 10 semestres</p>
+              <p>Facultad de: Ingeniería</p>
+              <p>Años de vigencia: 7 años</p>
+              <p>Jornada diurna: 7:00 a.m. a 1:00 p.m.</p>
+              <p>Jornada nocturna: 6:00 p.m. a 10:00 p.m.</p>
+              <p>Ver tarifas de créditos: Aquí</p>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="container mx-auto mt-32 text-gray-900">
+        <div className="flex justify-center items-center">
+          <h2 className="text-4xl font-bold mb-8">Titulaciones</h2>{" "}
+          {/* Centrado con un margen abajo */}
+        </div>
+
+        <div className="flex justify-center items-start space-x-8 max-w-7xl mx-auto">
+          {" "}
+          {/* Ajustado para centrar y agregar espacio horizontalmente */}
+          <div className="bg-[#f8f7f5] rounded-lg shadow-lg p-6 w-1/3 flex flex-col justify-center items-center text-center space-y-4 min-h-72">
+            <h3 className="text-lg font-semibold">Técnica Profesional en</h3>
+            <h2 className="text-xl text-gray-800">
+              PROGRAMACIÓN DE APLICACIONES DE SOFTWARE
+            </h2>
+            <p className="text-sm text-gray-600 mt-4">
+              Resolución 9059 del 28 de agosto de 2019
+              <br />
+              Años de vigencia: 7 años
+              <br />
+              SNIES: 108334
+            </p>
+            <a href="#" className="text-blue-500 underline mt-4 inline-block">
+              Ver tarifas de créditos aquí
+            </a>
+          </div>
+          <div className="bg-[#f8f7f5]  rounded-lg shadow-lg p-6 w-1/3 flex flex-col justify-center items-center text-center space-y-4 min-h-72">
+            <h3 className="text-lg font-semibold">Tecnología en</h3>
+            <h2 className="text-xl text-gray-800">
+              DESARROLLO DE APLICACIONES WEB Y MÓVILES
+            </h2>
+            <p className="text-sm text-gray-600 mt-4">
+              Resolución 9057 del 28 de agosto de 2019
+              <br />
+              Años de vigencia: 7 años
+              <br />
+              SNIES: 108335
+            </p>
+            <a href="#" className="text-blue-500 underline mt-4 inline-block">
+              Ver tarifas de créditos aquí
+            </a>
+          </div>
+          <div className="bg-[#f8f7f5]  rounded-lg shadow-lg p-6 w-1/3 flex flex-col justify-center items-center text-center space-y-4 min-h-72">
+            <h3 className="text-lg font-semibold">Profesional en</h3>
+            <h2 className="text-xl text-gray-800">INGENIERÍA DE SOFTWARE</h2>
+            <p className="text-sm text-gray-600 mt-4">
+              Resolución 9058 del 28 de agosto de 2019
+              <br />
+              Años de vigencia: 7 años
+              <br />
+              SNIES: 109130
+            </p>
+            <a href="#" className="text-blue-500 underline mt-4 inline-block">
+              Ver tarifas de créditos aquí
+            </a>
+          </div>
+        </div>
       </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="container mx-auto mt-32 text-gray-900">
+        <div className="flex justify-center items-start space-x-8 max-w-7xl mx-auto">
+          <div className="p-6 w-1/3 flex flex-col justify-center text-st space-y-4 min-h-72">
+            <h2 className="text-4xl font-bold mb-8">Titulaciones</h2>{" "}
+            <div className="container mx-auto mt-12 text-gray-900">
+              <ul className="list-disc pl-10 space-y-1 text-gray-900 marker:text-gray-700">
+                <li>Ingeniero de calidad.</li>
+                <li>Gerente de proyectos de software.</li>
+                <li>Líder de desarrollo de software</li>
+                <li>Desarrollador de software web.</li>
+                <li>Integrador de soluciones web y móviles.</li>
+                <li>Desarrollador de aplicaciones móviles.</li>
+                <li>Líder Técnico de pruebas.</li>
+              </ul>
+            </div>
+          </div>
+          <div className="p-6 w-1/3 flex flex-col justify-center items-center text-center space-y-4 min-h-72">
+            <p className="text-sm text-gray-600 mt-4">
+              <img
+                src="/images/woman-working.jpg"
+                alt="Descripción de la imagen"
+                style={{ width: "100%", height: "auto" }}
+              />
+            </p>
+          </div>
+          <div className="p-6 w-1/3 flex flex-col justify-center items-center text-center space-y-4 min-h-72">
+            <p className="text-sm text-gray-600 mt-4">
+              <img
+                src="/images/men-working.jpg"
+                alt="Descripción de la imagen"
+                style={{ width: "100%", height: "auto" }}
+              />
+            </p>
+          </div>
+        </div>
       </div>
-    </main>
+
+      <div className="container mx-auto mt-32 text-gray-900 bg-gray-200 max-w-7xl pt-10 pb-10">
+        <div className="flex justify-center items-center">
+          <h2 className="text-4xl font-bold mb-8">Matrículas Abiertas</h2>
+        </div>
+        <div className="flex justify-center items-center">
+          <h2 className="text-base mb-8">
+            Somos la institución universitaria para todos y nuestro objetivo es
+            integrar a la comunidad con el sector productivo para afrontar los
+            desafíos del futuro.
+          </h2>
+        </div>
+      </div>
+
+      <div className="flex justify-center items-start space-x-20 max-w-7xl mx-auto mt-32">
+        <div className="py-8 flex-1">
+          <img
+            src="/images/Ingeniero-de-calidad-ucompensar.jpg"
+            alt="Descripción de la imagen"
+            style={{ width: "100%", height: "auto" }}
+          />
+
+          <div className="flex flex-col items-start pt-5">
+            <h1 className="text-orange-600 text-3xl font-bold max-w-xs pb-2">
+              Este será tu perfil
+            </h1>
+            <div className="border-t border-orange-600 w-full"></div>
+          </div>
+
+          <p className="text-gray-900 pt-5">
+            El ingeniero de software es competente en todas y cada una de las
+            etapas que comprenden el ciclo de vida de construcción de software
+            como requerimientos, análisis, diseño, arquitectura, implementación,
+            pruebas y puesta en marcha, así como en administrar tiempos,
+            recursos y procesos de una manera efectiva para la finalización
+            exitosa de proyectos de software.
+          </p>
+        </div>
+
+        <div className="flex-1">
+          <h1 className="text-gray-900 text-5xl font-bold">
+            Sé un experto en:
+          </h1>
+          <div className="container mx-auto mt-12 text-gray-900">
+            <ul className="list-disc pl-10 space-y-4 text-gray-900 marker:text-orange-500">
+              <li>Diseño y desarrollo web.</li>
+              <li>Diseño UX/UI.</li>
+              <li>Diseño y desarrollo de aplicaciones móviles.</li>
+              <li>Arquitectura de software. Desarrollo backEnd.</li>
+              <li>Desarrollo frontEnd.</li>
+              <li>Ingeniería de requerimientos.</li>
+              <li>Cloud Computing.</li>
+              <li>Testing y aseguramiento de la calidad.</li>
+              <li>Metodologías ágiles de desarrollo.</li>
+              <li>Gestión de proyectos de software.</li>
+              <li>Integración de tecnologías.</li>
+            </ul>
+          </div>
+          <button
+            type="submit"
+            className="mt-10 bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded"
+          >
+            Plan de estudios
+          </button>
+        </div>
+      </div>
+    </section>
   );
 }
