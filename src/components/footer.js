@@ -105,47 +105,47 @@ function Footer() {
         <nav>
           <ul className="flex space-x-4">
             <li>
-              <a href="/" className="hover:text-gray-300">
+              <a href="https://ucompensar.edu.co/documentos-de-interes/" className="hover:text-gray-300">
                 Documentos de Interés
               </a>
             </li>
             <li>
-              <a href="/about" className="hover:text-gray-300">
+              <a href="https://ucompensar.edu.co/regimen-tributario-especial/" className="hover:text-gray-300">
                 Régimen Tributario Especial
               </a>
             </li>
             <li>
-              <a href="/services" className="hover:text-gray-300">
+              <a href="https://recurso.ucompensar.edu.co/Servicio/saleForceWebToCase/src/PQRSF.html?_gl=1*g8m8zi*_ga*NzIyOTEyNjMyLjE3MTIyNDg3NTY.*_ga_XGQ6YMBJF1*MTcxNjI0NDA1MS4zMS4wLjE3MTYyNDQwNTEuNjAuMC4w" className="hover:text-gray-300">
                 Radica tus PQRSF AQUÍ
               </a>
             </li>
             <li>
-              <a href="/contact" className="hover:text-gray-300">
+              <a href="https://ucompensar.edu.co/preguntas-frecuentes/" className="hover:text-gray-300">
                 Preguntas Frecuentes
               </a>
             </li>
             <li>
-              <a href="/contact" className="hover:text-gray-300">
+              <a href="https://ucompensar.edu.co/wp-content/uploads/2023/12/Resolucion-328-Derechos-Pecuniarios-2024-firmado.pdf" className="hover:text-gray-300">
                 Derechos Pecuniarios
               </a>
             </li>
             <li>
-              <a href="/contact" className="hover:text-gray-300">
+              <a href="https://ucompensar.edu.co/wp-content/uploads/2021/06/Resolucion-12455-de-9-de-julio-de-2020.pdf" className="hover:text-gray-300">
                 Estatutos
               </a>
             </li>
             <li>
-              <a href="/contact" className="hover:text-gray-300">
+              <a href="https://ucompensar.edu.co/wp-content/uploads/2023/06/POL-PAJ-02-V06-Tratamiento-de-datos-personales.pdf" className="hover:text-gray-300">
                 Tratamiento de datos personales
               </a>
             </li>
             <li>
-              <a href="/contact" className="hover:text-gray-300">
+              <a href="https://ucompensar.edu.co/wp-content/uploads/2023/08/Reglamento-estudiantil-v2.pdf" className="hover:text-gray-300">
                 Reglamento estudiantes
               </a>
             </li>
             <li>
-              <a href="/contact" className="hover:text-gray-300">
+              <a href="https://ucompensar.edu.co/wp-content/uploads/2022/07/Reglamento-Docente-ucompensar.pdf" className="hover:text-gray-300">
                 Reglamento del profesorado
               </a>
             </li>

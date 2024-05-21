@@ -251,7 +251,7 @@ export default function Home() {
           <h1 className="text-gray-900 text-5xl font-bold">
             Sé un experto en:
           </h1>
-          <div className="container mx-auto mt-12 text-gray-900">
+          <div className="container mx-auto mt-12 text-gray-900 mb-10">
             <ul className="list-disc pl-10 space-y-4 text-gray-900 marker:text-orange-500">
               <li>Diseño y desarrollo web.</li>
               <li>Diseño UX/UI.</li>
@@ -266,12 +266,13 @@ export default function Home() {
               <li>Integración de tecnologías.</li>
             </ul>
           </div>
-          <button
-            type="submit"
-            className="mt-10 bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded"
+
+          <a
+            href="https://ucompensar.edu.co/wp-content/uploads/2021/04/Brochure-Ingenieria-de-Software-Presencial.pdf"
+            className="bg-orange-500 hover:bg-white hover:border hover:border-orange-600 hover:text-orange-600 text-white font-bold py-3 px-10 rounded"
           >
             Plan de estudios
-          </button>
+          </a>
         </div>
       </div>
     </section>
